@@ -45,23 +45,23 @@ public class Student {
     }
 
     Student(String n, String sid, String em) {
-       setName(n);
-       setId(sid);
-       setGroup("INT22042");
-       setEmail(em);
+        this.name = n;
+        this.id = sid;
+        this.group = "INT22042";
+        this.email = em;
 
     }
 
     Student(Student s) {
-       s.name = getName();
-       s.id = getId();
-       s.group = getGroup();
-       s.email = getEmail();
+        this.name = s.name;
+        this.id = s.id;
+        this.group = s.group;
+        this.email = s.email;
 
     }
 
     String getInfo() {
-        return (getName() + "\n" + getId() + "\n" + getGroup() + "\n" + getEmail() + "\n");
+        String TTSV = name + "\n" + id + "\n" + group + "\n" + email + "\n";
+        return TTSV;
     }
 }
-
